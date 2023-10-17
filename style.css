@@ -1,17 +1,29 @@
-*
-{
+* {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.font-nunito{
+.font-nunito {
     font-family: 'Nunito', sans-serif;
 }
-.active::before {
-    content: '';
 
-    background: linear-gradient(90deg, rgba(255, 220, 96, 1) 50%, rgba(89, 86, 224, 1) 50%);
-    height: 3px;
-    max-width: 100%;
-    transform: translateY(1.5rem);
-    display: block;
+@media (min-width: 768px) {
+    .md\:active::before {
+        content: '';
+        background: linear-gradient(90deg, rgba(255, 220, 96, 1) 50%, rgba(89, 86, 224, 1) 50%);
+        height: 3px;
+        max-width: 100%;
+        transform: translateY(1.5rem);
+        display: block;
+    }
+}
+
+@media (min-width: 1280px) {
+    .active-xl::before {
+        content: '';
+        background: linear-gradient(90deg, rgba(255, 220, 96, 1) 50%, rgba(89, 86, 224, 1) 50%);
+        height: 3px;
+        max-width: 100%;
+        transform: translateY(2rem);
+        display: block;
+    }
 }

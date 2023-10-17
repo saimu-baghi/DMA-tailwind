@@ -21,456 +21,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body>
     <!------------------------ header -------------------------->
-    <div class="container min-h-screen min-w-full px-64 bg-[url('img/hero-main.svg')] bg-center bg-cover relative">
+    <div
+        class="container min-w-full min-h-screen xl:px-44 xl:pb-20 pb-3 md:pb-0 md:px-20 lg:px-32 md:bg-[url('img/hero-main.svg')] bg-gradient-to-br from-[#E9F7FF] to-[#FFDBD4] bg-center bg-cover relative">
         <!------------------------ navbar -------------------------->
-        <nav>
-            <ul class="flex text-center px-60 py-10">
-                <li class="list-none inline-block mx-7"><a href="index.html"
-                        class="no-underline text-xs font-medium text-[#292930] active">Home</a></li>
-                <li class="list-none inline-block mx-7"><a href="#"
-                        class="no-underline text-xs font-medium text-[#292930]">About</a></li>
-                <li class="list-none inline-block mx-7"><a href="services.html"
-                        class="no-underline text-xs font-medium text-[#292930]">Servces</a></li>
-                <li class="list-none inline-block mx-7"><a href="#"
-                        class="no-underline text-xs font-medium text-[#292930]">Blog</a></li>
-            </ul>
+        <nav class="bg-transparent md:flex">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium text-[#292930] md:text-xs xl:text-base 2xl:text-2xl flex justify-center flex-col p-4 md:p-0 mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:bg-transparent">
+                        <li>
+                            <a href="#" class="block py-2 rounded md:bg-transparent md:p-0 md:active active-xl"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 rounded md:bg-transparent md:p-0"
+                                aria-current="page">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 rounded md:bg-transparent md:p-0"
+                                aria-current="page">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 rounded md:bg-transparent md:p-0" aria-current="page">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <!------------------------ /navbar -------------------------->
         <!------------------------ hero -------------------------->
-        <div class="mt-32 max-w-sm">
-            <p class="uppercase text-xs font-medium tracking-widest text-[#292930]"><span class="text-[#FEC90C]">//
-                </span>agency</p>
-            <p class="mt-5 font-nunito font-black text-[#292930] text-5xl leading-tight">A fully integrated digital
+        <div class="xl:mt-20 md:mt-10 md:max-w-sm lg:max-w-md px-10 md:px-0 2xl:max-w-3xl">
+            <p class="uppercase text-xs 2xl:text-2xl font-medium tracking-widest text-[#292930]"><span
+                    class="text-[#FEC90C]">// </span>agency</p>
+            <p
+                class="md:mt-5 mt-3 font-nunito font-black text-[#292930] xl:text-5xl lg:text-4xl 2xl:text-8xl text-3xl leading-tight">
+                A fully
+                integrated digital
                 <span class="text-[#5956E8]">marketing</span> agency
             </p>
-            <p class="mt-5 text-[#555555] text-xs leading-relaxed">Lorem ipsum dolor sit amet, ea mundi malorum cum,
+            <p class="md:mt-5 mt-3 text-[#555555] text-xs 2xl:text-2xl leading-relaxed">Lorem ipsum dolor sit amet, ea
+                mundi malorum
+                cum,
                 ocurreret reprehendunt ius ex. Ut vis mazim erroribus forensibus.</p>
 
-            <div class="mt-5">
-                <a href="#" class="bg-[#292930] text-white rounded-md px-6 py-3 font-nunito font-medium text-sm inline-block mr-3 border-[1.5px] border-transparent
+            <div class="md:mt-5 my-3">
+                <a href="#" class="bg-[#292930] text-white rounded-md sm:px-6 sm:py-3 px-4 py-2 font-nunito font-medium text-sm 2xl:text-3xl inline-block mr-3 border-[1.5px] border-transparent
                 hover:bg-transparent hover:border-[1.5px] hover:border-[#292930] hover:text-[#292930] duration-300">Our
                     Services</a>
-                <a href="#" class="bg-transparent border-[#292930] border-[1.5px] rounded-md px-6 py-3 text-sm font-nunito font-medium inline-block
+                <a href="#" class="bg-transparent border-[#292930] border-[1.5px] rounded-md sm:px-6 sm:py-3 px-4 py-2 text-sm 2xl:text-3xl font-nunito font-medium inline-block
                 hover:bg-[#292930] hover:text-white hover:border-transparent hover:border-[1.5px] duration-300">Get
                     Started</a>
             </div>
         </div>
-        <img src="img/markt.png" class="w-full xl:w-1/3 xl:absolute bottom-5 right-20">
+        <img src="img/markt.png"
+            class="w-full md:w-1/3 2xl:w-1/4 md:absolute bottom-5 xl:right-32 lg:top-10 lg:right-24 xl:top-20 md:right-10">
         <!------------------------ /hero -------------------------->
     </div>
     <!------------------------ /header -------------------------->
-    <!------------------------ services section -------------------------->
-    <div class="container bg-[#292930] min-h-screen min-w-full px-64 py-24">
-        <div class="flex items-center">
-            <span class="bg-[#5956E8] text-[#C4C2FF] rounded-full px-5 py-3 inline-block">
-                <i class="bi bi-gear fa-2x"></i>
-            </span>
-            <div class="mx-7 max-w-sm">
-                <p class="uppercase text-xs font-medium tracking-widest text-[#D0D0D0]"><span class="text-[#FEC90C]">//
-                    </span>1. services</p>
-                <p class="mt-1 text-white font-nunito font-semibold text-2xl">High-impact services to take your business
-                    to the next level</p>
-            </div>
-            <a href="#" class="bg-white text-[#292930] rounded-md px-6 py-3 font-nunito font-medium text-sm inline-block ml-48 border-[1.5px] border-transparent
-                hover:bg-transparent hover:border-[1.5px] hover:border-white hover:text-white duration-300">Our
-                Services</a>
-        </div>
-        <div class="mt-12 flex ">
-            <!-------------- card div ----------------->
-            <div
-                class="mx-5 bg-gradient-to-b from-[#36363E] border border-[#424245] to-[#292930] rounded-2xl px-6 py-6 max-w-[15rem]">
-                <span class="bg-[#292930] rounded-full px-6 py-7 inline-block">
-                    <img src="img/socialmedia.png" class="w-16">
-                </span>
-                <p class="text-white font-nunito font-medium text-lg">Social Media Marketing</p>
-                <p class="mt-2 text-[#D0D0D0] text-xs leading-relaxed">Lorem ipsum dolor sit amet, ea mundi malorum cum,
-                    ocurreret reprehendunt.</p>
-                <a href="#" class="mt-4 bg-[#FFDC60] text-[#292930] rounded-md min-w-full text-center py-3 font-nunito font-medium text-sm inline-block border border-transparent
-                hover:bg-transparent hover:border hover:border-[#535355] hover:text-[#535355] duration-300">Read More
-                    <i class="bi bi-caret-right-fill fa-sm"></i></a>
-            </div>
-            <!-------------- /card div ----------------->
-            <!-------------- card div ----------------->
-            <div
-                class="mx-5 bg-gradient-to-b from-[#36363E] border border-[#424245] to-[#292930] rounded-2xl px-6 py-6 max-w-[15rem]">
-                <span class="bg-[#292930] rounded-full px-6 py-7 inline-block">
-                    <img src="img/socialmedia.png" class="w-16">
-                </span>
-                <p class="text-white font-nunito font-medium text-lg">Social Media Marketing</p>
-                <p class="mt-2 text-[#D0D0D0] text-xs leading-relaxed">Lorem ipsum dolor sit amet, ea mundi malorum cum,
-                    ocurreret reprehendunt.</p>
-                <a href="#" class="mt-4 bg-transparent text-[#535355] rounded-md min-w-full text-center py-3 font-nunito font-medium text-sm inline-block border border-[#535355]
-                hover:bg-[#FFDC60] hover:border hover:border-[#FFDC60] hover:text-[#292930] duration-300">Read More <i
-                        class="bi bi-caret-right-fill fa-sm"></i></a>
-            </div>
-            <!-------------- /card div ----------------->
-            <div
-                class="mx-5 bg-gradient-to-b from-[#36363E] border border-[#424245] to-[#292930] rounded-2xl px-6 py-6 max-w-[15rem]">
-                <span class="bg-[#292930] rounded-full px-6 py-7 inline-block">
-                    <img src="img/socialmedia.png" class="w-16">
-                </span>
-                <p class="text-white font-nunito font-medium text-lg">Social Media Marketing</p>
-                <p class="mt-2 text-[#D0D0D0] text-xs leading-relaxed">Lorem ipsum dolor sit amet, ea mundi malorum cum,
-                    ocurreret reprehendunt.</p>
-                <a href="#" class="mt-4 bg-transparent text-[#535355] rounded-md min-w-full text-center py-3 font-nunito font-medium text-sm inline-block border border-[#535355]
-                hover:bg-[#FFDC60] hover:border hover:border-[#FFDC60] hover:text-[#292930] duration-300">Read More <i
-                        class="bi bi-caret-right-fill fa-sm"></i></a>
-            </div>
-            <!-------------- /card div ----------------->
-        </div>
-        <div class="mt-12 flex ">
-            <!-------------- card div ----------------->
-            <div
-                class="mx-5 bg-gradient-to-b from-[#36363E] border border-[#424245] to-[#292930] rounded-2xl px-6 py-6 max-w-[15rem]">
-                <span class="bg-[#292930] rounded-full px-6 py-7 inline-block">
-                    <img src="img/socialmedia.png" class="w-16">
-                </span>
-                <p class="text-white font-nunito font-medium text-lg">Social Media Marketing</p>
-                <p class="mt-2 text-[#D0D0D0] text-xs leading-relaxed">Lorem ipsum dolor sit amet, ea mundi malorum cum,
-                    ocurreret reprehendunt.</p>
-                <a href="#" class="mt-4 bg-transparent text-[#535355] rounded-md min-w-full text-center py-3 font-nunito font-medium text-sm inline-block border border-[#535355]
-                hover:bg-[#FFDC60] hover:border hover:border-[#FFDC60] hover:text-[#292930] duration-300">Read More <i
-                        class="bi bi-caret-right-fill fa-sm"></i></a>
-            </div>
-            <!-------------- /card div ----------------->
-            <!-------------- card div ----------------->
-            <div
-                class="mx-5 bg-gradient-to-b from-[#36363E] border border-[#424245] to-[#292930] rounded-2xl px-6 py-6 max-w-[15rem]">
-                <span class="bg-[#292930] rounded-full px-6 py-7 inline-block">
-                    <img src="img/socialmedia.png" class="w-16">
-                </span>
-                <p class="text-white font-nunito font-medium text-lg">Social Media Marketing</p>
-                <p class="mt-2 text-[#D0D0D0] text-xs leading-relaxed">Lorem ipsum dolor sit amet, ea mundi malorum cum,
-                    ocurreret reprehendunt.</p>
-                <a href="#" class="mt-4 bg-transparent text-[#535355] rounded-md min-w-full text-center py-3 font-nunito font-medium text-sm inline-block border border-[#535355]
-                hover:bg-[#FFDC60] hover:border hover:border-[#FFDC60] hover:text-[#292930] duration-300">Read More <i
-                        class="bi bi-caret-right-fill fa-sm"></i></a>
-            </div>
-            <!-------------- /card div ----------------->
-            <div
-                class="mx-5 bg-gradient-to-b from-[#36363E] border border-[#424245] to-[#292930] rounded-2xl px-6 py-6 max-w-[15rem]">
-                <span class="bg-[#292930] rounded-full px-6 py-7 inline-block">
-                    <img src="img/socialmedia.png" class="w-16">
-                </span>
-                <p class="text-white font-nunito font-medium text-lg">Social Media Marketing</p>
-                <p class="mt-2 text-[#D0D0D0] text-xs leading-relaxed">Lorem ipsum dolor sit amet, ea mundi malorum cum,
-                    ocurreret reprehendunt.</p>
-                <a href="#" class="mt-4 bg-transparent text-[#535355] rounded-md min-w-full text-center py-3 font-nunito font-medium text-sm inline-block border border-[#535355]
-                hover:bg-[#FFDC60] hover:border hover:border-[#FFDC60] hover:text-[#292930] duration-300">Read More <i
-                        class="bi bi-caret-right-fill fa-sm"></i></a>
-            </div>
-            <!-------------- /card div ----------------->
-        </div>
 
-    </div>
-    <!------------------------ /services section -------------------------->
-    <!------------------------ about-us section -------------------------->
-    <div class="container flex bg-white min-h-screen min-w-full pl-44 pr-64 py-24">
-        <img src="img/abts.png" class="w-full xl:w-1/2">
-        <div>
-            <div class="flex mb-6">
-                <span class="bg-[#FFDC60] text-[#866C12] rounded-full px-4 py-1 max-h-20 inline-block">
-                    <i class="bi bi-at fa-3x"></i>
-                </span>
-                <div class="mx-7 max-w-sm">
-                    <p class="uppercase text-xs font-medium tracking-widest text-[#292930]"><span
-                            class="text-[#FEC90C]">// </span>2. about us</p>
-                    <p class="mt-1 text-[#292930] font-nunito font-semibold text-2xl">The #1 digital marketing services
-                        company</p>
-                </div>
-            </div>
-            <hr>
-            <p class="mt-6 text-[#555555] text-xs leading-relaxed">Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry ftyuu Ipsum has been the industry's standard book. It has survived not only five
-                centuries, but also the leap into electronic typesetting.</p>
-            <!--------------- bullets ----------------->
-            <div class="flex mt-4 ml-16 items-center">
-                <span class="bg-transparent text-[#5956E8] rounded-full px-5 py-3 inline-block border border-[#D5D5D5]">
-                    <i class="bi bi-clipboard-data fa-2x"></i></span>
-                <div>
-                    <p
-                        class="text-[#292930] font-nunito font-medium text-lg border-b border-b-[#CFCFCF] pl-3 min-w-full pt-6">
-                        Guaranteed Results</p>
-                    <p class="text-[#555555] text-xs leading-relaxed px-3 mt-3">Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry.</p>
-                </div>
-            </div>
-            <div class="flex mt-4 ml-16 items-center">
-                <span class="bg-transparent text-[#5956E8] rounded-full px-5 py-3 inline-block border border-[#D5D5D5]">
-                    <i class="bi bi-people fa-2x"></i></span>
-                <div>
-                    <p
-                        class="text-[#292930] font-nunito font-medium text-lg border-b border-b-[#CFCFCF] pl-3 min-w-full pt-6">
-                        Team of Industry Experts</p>
-                    <p class="text-[#555555] text-xs leading-relaxed px-3 mt-3">consectetur amet dolor sit comeneer
-                        ilremsilom dolce issilm acalrm leoinsion duycoqun consemleint lorem.</p>
-                </div>
-            </div>
-            <!--------------- /bullets ----------------->
-        </div>
-    </div>
-    <!------------------------ /about-us section -------------------------->
-    <!------------------------ process section -------------------------->
-    <div class=" bg-white px-64">
-        <div
-            class="container bg-gradient-to-br from-[#E9F7FF] via-[#FFDBD4] to-[#FFF3CA] min-h-screen rounded-lg items-center text-center py-24">
-            <span class="bg-[#292930] text-[#8A8A8A] rounded-full px-4 py-1 max-h-20 inline-block">
-                <i class="bi bi-book-half fa-3x"></i>
-            </span>
-            <div class="px-60 my-6">
-                <p class="uppercase text-xs font-medium tracking-widest text-[#292930]"><span class="text-[#5956E8]">//
-                    </span>3. process</p>
-                <p class="mt-1 text-[#292930] font-nunito font-semibold text-2xl">A simple, yet powerful and efficient
-                    process</p>
-            </div>
-            <!-------------------- point-1 ------------------->
-            <div class="flex items-center text-center mx-24 mt-12">
-                <img src="img/plan.svg" class="w-full xl:w-5/12">
-                <span
-                    class="ml-6 mr-4 bg-white text-[#292930] rounded-full px-5 py-3 inline-block border-8 border-[#FFD1C8]">
-                    <p class="font-nunito font-semibold text-2xl">1</p>
-                </span>
-                <div class="text-left">
-                    <p class="text-[#292930] font-nunito font-medium text-lg">Marketing Plan</p>
-                    <p class="mt-1 text-[#555555] text-xs leading-relaxed">consectetur amet dolor sit comeneer
-                        ilremsilom dolce issilm acalrm</p>
-                </div>
-            </div>
-            <!-------------------- /point-1 ------------------->
-            <!-------------------- point-2 ------------------->
-            <div class="flex items-center text-center mx-24 mt-12">
-                <div class="text-right">
-                    <p class="text-[#292930] font-nunito font-medium text-lg">Work Execution</p>
-                    <p class="mt-1 text-[#555555] text-xs leading-relaxed">consectetur amet dolor sit comeneer
-                        ilremsilom dolce issilm acalrm</p>
-                </div>
-                <span
-                    class="ml-6 mr-4 bg-white text-[#292930] rounded-full px-5 py-3 inline-block border-8 border-[#FFD1C8] ">
-                    <p class="font-nunito font-semibold text-2xl">2</p>
-                </span>
-                <img src="img/work.svg" class="w-full xl:w-5/12">
-            </div>
-            <!-------------------- /point-2 ------------------->
-            <!-------------------- point-3 ------------------->
-            <div class="flex items-center text-center mx-24 mt-12">
-                <img src="img/growth.svg" class="w-full xl:w-5/12">
-                <span
-                    class="ml-6 mr-4 bg-white text-[#292930] rounded-full px-5 py-3 inline-block border-8 border-[#FFD1C8]">
-                    <p class="font-nunito font-semibold text-2xl">3</p>
-                </span>
-                <div class="text-left">
-                    <p class="text-[#292930] font-nunito font-medium text-lg">Growth & Scale</p>
-                    <p class="mt-1 text-[#555555] text-xs leading-relaxed">consectetur amet dolor sit comeneer
-                        ilremsilom dolce issilm acalrm</p>
-                </div>
-            </div>
-            <!-------------------- /point-3 ------------------->
-        </div>
-    </div>
-    <!------------------------ /process section -------------------------->
-    <!------------------------ testimonials section -------------------------->
-    <div class="container bg-white pl-64 pr-44 py-24">
-        <div class="flex items-center">
-            <span class="bg-[#F5B7FF] text-[#C556D7] rounded-full px-4 py-1 max-h-20 inline-block">
-                <i class="bi bi-chat-right-quote fa-3x"></i>
-            </span>
-            <div class="mx-7 max-w-sm">
-                <p class="uppercase text-xs font-medium tracking-widest text-[#292930]"><span class="text-[#FEC90C]">//
-                    </span>4. testimonials</p>
-                <p class="mt-1 text-[#292930] font-nunito font-semibold text-2xl">We work with customers accross all
-                    industries</p>
-            </div>
-            <div class="ml-52">
-                <a id="prevBtn"
-                    class="bg-[#454545] text-white rounded-full px-2 py-2 font-nunito font-medium text-sm inline-block mr-2 border-[0.5px] border-transparent
-            hover:bg-transparent hover:border-[0.5px] hover:border-[#F1F1F1] hover:text-[#454545] hover:drop-shadow-[0_10px_12px_rgba(198, 198, 198, 0.25)] duration-300"><i
-                        class="bi bi-chevron-left fa-2x"></i></a>
-                <a id="nextBtn" class="bg-transparent border-[#F1F1F1] border-[0.5px]  rounded-full px-2 py-2 text-sm font-nunito font-medium inline-block drop-shadow-[0_10px_12px_rgba(198, 198, 198, 0.25)]
-            hover:bg-[#454545] hover:text-white hover:border-transparent hover:border-[1.5px] duration-300"><i
-                        class="bi bi-chevron-right fa-2x"></i></a>
-            </div>
-        </div>
-        <div class="slick mt-8">
-            <div>
-                <div class="bg-gradient-to-b from-[#FFF8F8] to-[#F5F7FF] rounded-md px-4 py-5 max-w-[25rem]">
-                    <div class="bg-white drop-shadow-[0_2px_4px_rgba(146, 146, 146, 0.25)] rounded-md px-6 py-8">
-                        <div class="flex border-b border-[#ECECEC] pb-3 items-center">
-                            <img src="img/logo1.svg" class="w-6">
-                            <p class="font-bold text-lg ml-1 text-[#292930]">Company</p>
-                            <ul class="flex ml-24 text-[#FFB545]">
-                                <li>
-                                    <i class="bi bi-star-fill fa-md ml-1"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill fa-md ml-1"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill fa-md ml-1"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill fa-md ml-1"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-half fa-md ml-1"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <p class="mt-4 text-[#555555] text-xs leading-relaxed">Lorem Ipsum has been the industry's
-                            standard from dummy text ever since the unknown printer to galley of type and make a type
-                            specimen book.</p>
-                    </div>
-                    <div class="mt-6 flex">
-                        <img src="img/test1.svg" class="w-10">
-                        <div class="ml-3 items-center">
-                            <p class="font-nunito font-bold text-sm text-[#292930]">John Carter</p>
-                            <p class="text-[#555555] text-xs leading-relaxed">Marketing Lead at Google</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="bg-gradient-to-b from-[#FFF8F8] to-[#F5F7FF] rounded-md px-4 py-5 max-w-[25rem]">
-                    <div class="bg-white drop-shadow-[0_2px_4px_rgba(146, 146, 146, 0.25)] rounded-md px-6 py-8">
-                        <div class="flex border-b border-[#ECECEC] pb-3 items-center">
-                            <img src="img/logo2.svg" class="w-6">
-                            <p class="font-bold text-lg ml-1 text-[#292930]">Company</p>
-                            <ul class="flex ml-24 text-[#FFB545]">
-                                <li>
-                                    <i class="bi bi-star-fill fa-md ml-1"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill fa-md ml-1"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill fa-md ml-1"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill fa-md ml-1"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-half fa-md ml-1"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <p class="mt-4 text-[#555555] text-xs leading-relaxed">Lorem Ipsum has been the industry's
-                            standard from dummy text ever since the unknown printer to galley of type and make a type
-                            specimen book.</p>
-                    </div>
-                    <div class="mt-6 flex">
-                        <img src="img/test2.svg" class="w-10">
-                        <div class="ml-3 items-center">
-                            <p class="font-nunito font-bold text-sm text-[#292930]">Peeter pawl</p>
-                            <p class="text-[#555555] text-xs leading-relaxed">Designer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="bg-gradient-to-b from-[#FFF8F8] to-[#F5F7FF] rounded-md px-4 py-5 max-w-[25rem]">
-                    <div class="bg-white drop-shadow-[0_2px_4px_rgba(146, 146, 146, 0.25)] rounded-md px-6 py-8">
-                        <div class="flex border-b border-[#ECECEC] pb-3 items-center">
-                            <img src="img/logo1.svg" class="w-6">
-                            <p class="font-bold text-lg ml-1 text-[#292930]">Company</p>
-                            <ul class="flex ml-24 text-[#FFB545]">
-                                <li>
-                                    <i class="bi bi-star-fill fa-md ml-1"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill fa-md ml-1"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill fa-md ml-1"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-fill fa-md ml-1"></i>
-                                </li>
-                                <li>
-                                    <i class="bi bi-star-half fa-md ml-1"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <p class="mt-4 text-[#555555] text-xs leading-relaxed">Lorem Ipsum has been the industry's
-                            standard from dummy text ever since the unknown printer to galley of type and make a type
-                            specimen book.</p>
-                    </div>
-                    <div class="mt-6 flex">
-                        <img src="img/test1.svg" class="w-10">
-                        <div class="ml-3 items-center">
-                            <p class="font-nunito font-bold text-sm text-[#292930]">John Carter</p>
-                            <p class="text-[#555555] text-xs leading-relaxed">Marketing Lead at Google</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!------------------------ /testimonials section -------------------------->
-    <!------------------------ Benifits section -------------------------->
-    <div class="container bg-white pl-64 pr-52 pb-24">
-        <div class="flex pb-24">
-            <div>
-                <div class="flex items-center">
-                    <span class="bg-[#CA87FF] text-[#722AAB] rounded-full px-4 py-1 max-h-20 inline-block">
-                        <i class="bi bi-award fa-3x"></i>
-                    </span>
-                    <div class="mx-7 max-w-sm">
-                        <p class="uppercase text-xs font-medium tracking-widest text-[#292930]"><span
-                                class="text-[#FEC90C]">//
-                            </span>5. Benifits</p>
-                        <p class="mt-1 text-[#292930] font-nunito font-semibold text-2xl">Benifit of working</p>
-                    </div>
-                </div>
-                <img src="img/benfit.png" class="w-full xl:w-11/12">
-            </div>
-            <div>
-                <div class="flex mt-4 items-center">
-                    <span
-                        class="bg-transparent text-[#292930] rounded-full px-5 py-3 inline-block border border-[#D5D5D5]">
-                        <i class="bi bi-bar-chart-line-fill fa-2x"></i></span>
-                    <div>
-                        <p
-                            class="text-[#292930] font-nunito font-medium text-lg border-b border-b-[#CFCFCF] pl-3 min-w-full pt-6">
-                            Page rankings</p>
-                        <p class="text-[#555555] text-xs leading-relaxed px-3 mt-3">Lorem Ipsum is simply dummy text of
-                            the
-                            printing and typesetting industry.</p>
-                    </div>
-                </div>
-                <div class="flex mt-4 items-center">
-                    <span
-                        class="bg-transparent text-[#292930] rounded-full px-5 py-3 inline-block border border-[#D5D5D5]">
-                        <i class="bi bi-gear-wide-connected fa-2x"></i></span>
-                    <div>
-                        <p
-                            class="text-[#292930] font-nunito font-medium text-lg border-b border-b-[#CFCFCF] pl-3 min-w-full pt-6">
-                            Site OPtimization</p>
-                        <p class="text-[#555555] text-xs leading-relaxed px-3 mt-3">Lorem Ipsum is simply dummy text of
-                            the
-                            printing and typesetting industry.</p>
-                    </div>
-                </div>
-                <div class="flex mt-4 items-center">
-                    <span
-                        class="bg-transparent text-[#292930] rounded-full px-5 py-3 inline-block border border-[#D5D5D5]">
-                        <i class="bi bi-pie-chart-fill fa-2x"></i></span>
-                    <div>
-                        <p
-                            class="text-[#292930] font-nunito font-medium text-lg border-b border-b-[#CFCFCF] pl-3 min-w-full pt-6">
-                            Report & Analysis</p>
-                        <p class="text-[#555555] text-xs leading-relaxed px-3 mt-3">Lorem Ipsum is simply dummy text of
-                            the
-                            printing and typesetting industry.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-    </div>
-    <!------------------------ /Benifits section -------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -524,121 +150,5 @@
         });
     </script>
 </body>
-<!------------------------ Footer -------------------------->
-<footer class="container bg-[#292930] text-white min-h-screen min-w-full">
-    <div class="flex px-64 py-24">
-        <div class="mx-5 bg-[#3C3C45] rounded-md px-6 pt-14 pb-5 items-center max-w-[15rem]">
-            <img src="img/logo-nl.svg" class="w-full">
-            <p class="text-white font-nunito font-medium text-lg">Subscribe now</p>
-            <p class="text-[#D0D0D0] text-xs leading-relaxed">Industry's standard from dummy and make a type book.</p>
-            <div class=" my-3">
-                <input type="email" id="form5Example21" placeholder="Enter Your Email..."
-                    class="bg-[#5B5B61] border-none font-nunito w-full h-12 rounded-md text-white" />
-            </div>
-            <a href="#"
-                class="bg-[#FFDC60] text-[#292930] rounded-md min-w-full text-center py-3 font-nunito font-medium text-sm inline-block border border-transparent
-                hover:bg-transparent hover:border hover:border-[#535355] hover:text-[#535355] duration-300">Subscribe</a>
-        </div>
-        <div class="ml-12">
-            <div class="flex pb-8">
-                <div>
-                    <div class="flex items-center">
-                        <i class="bi bi-telephone fa-lg text-[#3AD879]"></i>
-                        <p class="font-nunito font-medium text-lg ml-1">Get in touch with</p>
-                    </div>
-                    <p class="bg-[#3C3C45] text-[#FFDC60] font-semibold text-lg px-5 py-2 rounded-md my-3
-                    ">+92 123456789</p>
-                    <p class="text-[#D0D0D0] text-xs leading-relaxed">abcd@marketing.com</p>
-                </div>
-                <div class="ml-20 max-w-[13rem]">
-                    <div class="flex items-center">
-                        <i class="bi bi-geo-alt fa-lg text-[#FFDC60]"></i>
-                        <p class="font-nunito font-medium text-lg ml-1">Location</p>
-                    </div>
-                    <p class="py-3 text-[#D0D0D0] text-xs leading-relaxed">Worem ipsum dolor sit amet, consectetur
-                        adipiscing elit.</p>
-                    <a href="#" class="text-[#FFDC60] underline text-xs leading-relaxed">location</a>
-                </div>
-            </div>
-            <hr class="border-[#727274]">
-            <div class="flex my-8">
-                <div>
-                    <div class="flex items-center">
-                        <img src="img/ftr-pgs.svg">
-                        <p class="font-nunito font-medium text-lg ml-1">Pages</p>
-                    </div>
-                    <ul class="mt-6">
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">Home</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">About</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">Pricing Single</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">Services</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="ml-20">
-                    <div class="flex items-center">
-                        <img src="img/ftr-utly.svg">
-                        <p class="font-nunito font-medium text-lg ml-1">Utility Pages</p>
-                    </div>
-                    <ul class="mt-6">
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">Styleguide</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">404 Not Found</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">Password Protected</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">Liscences</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">Changelog</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="ml-20">
-                    <div class="flex items-center">
-                        <img src="img/ftr-flw.svg">
-                        <p class="font-nunito font-medium text-lg ml-1">Follows</p>
-                    </div>
-                    <ul class="mt-6">
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">Facebook</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">Instagram</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-sm text-[#D0D0D0] leading-loose">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="border-[#727274]">
-            <div class="text-center">
-                <a class="text-[#D0D0D0] text-xs leading-relaxed" href="#">Copyright © Marketing Agency</a>
-            </div>
-        </div>
-    </div>
-</footer>
-<!------------------------ /Footer -------------------------->
 
 </html>
